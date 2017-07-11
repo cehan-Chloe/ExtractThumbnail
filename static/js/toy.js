@@ -1,5 +1,5 @@
 function getThumbnail() {
-  video_url = $("#url_input").val();
+  video_url = $("#url_input").val().replace(/ +?/g, '');
   data = {
     url: video_url,
   };

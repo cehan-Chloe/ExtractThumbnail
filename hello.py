@@ -11,7 +11,7 @@ app = Bottle()
 appPath =  dirname(abspath(__file__))
 
 @app.route('/')
-# add route to static HTML file
+# add route to static files
 @app.route('/static/<filepath:path>')
 def static_route(filepath=None):
     if filepath is None:

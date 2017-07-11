@@ -11,7 +11,7 @@ function getThumbnail() {
     dataType: "json",
     success: function success(data) {
       image_path = "static/img/" + data.image_name;
-      $("#img_div").html("<img src=\"" + image_path + "\">");
+      $("#img_div").html("<img src=\"" + image_path + "\" style=\"width:50\%\;height\:auto\;\">");
     },
     error: function error(xhr,status,error) {
       $("#img_div").html("<p> There is an error happened: " + error +" </p>");
